@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function cal() {
+            let ly,hoa,sinh;
+            ly=+prompt("Nhap diem ly: ");
+            hoa=+prompt("Nhap diem hoa: ");
+            sinh=+prompt("Nhap diem sinh: ");
+            let tong=ly+hoa+sinh;
+            let trungbinh=tong/3;
+            // document.write("Tong la: "+tong);
+            // document.write("<br>Trung binh la: "+trungbinh);
+            let string=   "Tong la: "+tong;
+            string+="<br>Trung binh la: "+trungbinh;
+            document.getElementById("display").innerHTML=string;
+
+
+        }
+
+    </script>
+</head>
+<body>
+<p>kjfhasjfhakf</p>
+<input type="button" onclick="cal();" value="Send">
+<span id="display"></span>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="button" value="Table" onclick="displayTable();">
+<div id="display"></div>
+<script>
+    function displayTable(){
+        let number=+prompt("Nhap so dong: ");
+        let table="<table width='200' border='1'>";
+        for(let i=0;i<number;i++){
+            table+="<tr>";
+            table+="<td>&nbsp;</td>";
+            table+="<td>&nbsp;</td>";
+            table+="</tr>";
+        }
+        table+="</table>";
+        document.getElementById("display").innerHTML=table;
+    }
+
+</script>
+</body>
+</html>
